@@ -3,28 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>成员 4 · 职业技能待补充</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="蔡伟的职业技能发展规划：编程与算法硬技能、软技能，以及大模型与 Agent 工程学习路线。">
+  <title>职业技能 · 蔡伟</title>
   <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand link" href="../../index.html"><span class="brand-mark">同.</span><span>同行小队<span class="brand-caption">TEAM SPACE</span></span></a><nav aria-label="主导航"><a class="link" href="../../index.html">团队首页</a><a class="link " href="index.html" >个人主页</a><a class="link active" href="skills.html" aria-current="page">职业技能</a></nav></div></header>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand link" href="../../index.html" aria-label="团队首页"><span class="brand-mark">同.</span><span>同行小队<span class="brand-caption">TEAM SPACE</span></span></a><nav aria-label="主导航"><a class="link " href="../../index.html" >团队首页</a><a class="link " href="index.html" >个人主页</a><a class="link active" href="skills.html" aria-current="page">职业技能</a></nav></div></header>
   <main class="container" id="main">
-    <section class="page-hero">
-      <!-- 接入真实成员时，请替换姓名、学号、标题及下方内容。 -->
-      <span class="eyebrow" style="color: #6152d6;">MEMBER 04 / 资料待补充</span>
-      <h1 style="font-weight: 750;">成员 4 · 职业技能</h1>
-      <p style="margin-bottom: 12px;">姓名：待补充　·　学号：<code style="color: #51418e;">MEMBER_4_STUDENT_ID</code></p>
-      <p style="font-size: 14px;">这是预留的成员页面，真实资料尚未接入。</p>
+    <section class="page-hero" aria-labelledby="skills-title">
+      <span class="eyebrow">SKILLS & GROWTH / 职业技能</span>
+      <!-- 课程要求：行内 CSS（1） -->
+      <h1 id="skills-title" style="color: #20243c; font-weight: 750;">让算法，真正落地成系统<span class="title-dot">.</span></h1>
+      <!-- 课程要求：行内 CSS（2） -->
+      <p style="margin-bottom: 16px;">为了走向 AI Agent 与算法工程相关工作，我希望从编程基础、优化算法和系统工程实践出发，逐步补齐解决实际问题所需的能力。</p>
+      <!-- 课程要求：行内 CSS（3） -->
+      <span style="color: #62578c; font-size: 14px;">以下是我的学习与发展目标，持续在实践中积累。</span>
     </section>
-    <section class="section grid three-columns" aria-label="职业技能内容">
-      <article class="card"><h2 style="font-size: 1.25rem; margin-bottom: 14px;">硬技能</h2><p>请根据该成员的职业目标补充需要掌握的编程、专业知识与工具。</p></article>
-      <article class="card"><h2 style="font-size: 1.25rem; margin-bottom: 14px;">软技能</h2><p>请补充沟通、团队协作、自主学习等能力及简短说明。</p></article>
-      <article class="card"><h2 style="font-size: 1.25rem; margin-bottom: 14px;">学习路线</h2><p>请补充分阶段学习计划、实践目标与职业方向。</p></article>
+    <nav class="page-tabs" aria-label="技能分类导航"><a class="link" href="#hard-skills">01 硬技能</a><a class="link" href="#soft-skills">02 软技能</a><a class="link" href="#learning-path">03 学习路线</a></nav>
+
+    <section class="section" id="hard-skills" aria-labelledby="hard-title">
+      <div class="section-heading row-heading"><div><span class="eyebrow">01 / TECHNICAL SKILLS</span><h2 id="hard-title">硬技能 · 从原理到实现</h2></div><span class="section-note">需要掌握的五个能力模块</span></div>
+      <div class="grid three-columns">
+        <article class="card skill-card"><div class="skill-label"><span class="icon-tile" aria-hidden="true">&lt;/&gt;</span><span class="overline">FOUNDATIONS</span></div><h3>编程基础</h3><p>写结构清晰、可读性强、易维护的代码，掌握多进程开发与协作流程。</p><div class="tags"><span>Python</span><span>面向对象编程</span><span>多进程</span><span>Git</span><span>Linux</span></div></article>
+        <article class="card skill-card"><div class="skill-label"><span class="icon-tile cyan" aria-hidden="true">⌘</span><span class="overline">OPTIMIZATION</span></div><h3>算法与优化</h3><p>理解经典算法与优化目标，能够针对业务场景改造搜索策略。</p><div class="tags"><span>数据结构与算法</span><span>Scikit-learn</span><span>遗传算法</span><span>差分进化</span><span>多目标优化</span><span>KMeans</span><span>孤立森林</span><span>Morris 敏感性分析</span></div></article>
+        <article class="card skill-card"><div class="skill-label"><span class="icon-tile blue" aria-hidden="true">Aa</span><span class="overline">LANGUAGE MODELS</span></div><h3>大语言模型</h3><p>理解模型基础原理，学习提示工程、检索增强生成与模型评测。</p><div class="tags"><span>LLM 原理</span><span>Prompt Engineering</span><span>Embedding</span><span>RAG</span><span>LLM-as-Judge</span><span>知识切片与重排</span><span>微调基础</span></div></article>
+        <article class="card skill-card"><div class="skill-label"><span class="icon-tile blue" aria-hidden="true">⎇</span><span class="overline">AI ENGINEERING</span></div><h3>AI 工程能力</h3><p>把模型与算法接入服务，组织数据、接口与部署流程。</p><div class="tags"><span>FastAPI</span><span>Redis</span><span>ChromaDB</span><span>Docker</span><span>Prometheus</span><span>Git / GitHub</span><span>模型部署基础</span></div></article>
+        <!-- 课程要求：行内 CSS（4） -->
+        <article class="card skill-card" style="background: linear-gradient(120deg, #f4f2ff, #ffffff);"><div class="skill-label"><span class="icon-tile" aria-hidden="true">&gt;_</span><span class="overline">AGENT SYSTEMS</span></div><h3>Agent · 从对话走向任务</h3><p>理解工具调用与智能体循环，探索上下文管理、分层记忆与多 Agent 协作的工程实现。</p><div class="tags"><span>Tool Calling / Function Calling</span><span>Agent Framework</span><span>Agent Loop</span><span>Agent Harness</span><span>MCP</span><span>Coding Agent</span><span>Context Management</span></div></article>
+      </div>
     </section>
-    <div class="hero-actions" style="margin: 0 0 48px;"><a class="link button primary" href="index.html">查看个人主页 ↗</a><a class="link text-button" href="../../index.html#members">返回团队成员</a></div>
+
+    <section class="section" id="soft-skills" aria-labelledby="soft-title">
+      <div class="section-heading"><span class="eyebrow">02 / WORKING BETTER</span><h2 id="soft-title">软技能 · 把事情做好</h2><p>技术之外，也练习沟通、思考与协作。</p></div>
+      <div class="grid three-columns">
+        <article class="card soft-card"><h3><span class="soft-number">01</span>沟通能力</h3><p>清楚描述需求、进展与遇到的问题。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">02</span>团队协作</h3><p>明确分工，及时同步，尊重不同意见。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">03</span>自主学习</h3><p>拆解学习目标，动手验证陌生知识。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">04</span>信息检索</h3><p>查阅论文与官方文档，交叉验证信息。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">05</span>问题分析</h3><p>先定位旧方案的痛点，再逐项改进。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">06</span>Debug 能力</h3><p>复现错误，通过日志和实验逐步定位。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">07</span>技术表达</h3><p>用文档、图示与示例说明技术思路。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">08</span>项目规划</h3><p>拆分任务，安排优先级并检查阶段成果。</p></article>
+        <article class="card soft-card"><h3><span class="soft-number">09</span>效率意识</h3><p>把重复工作做成工具，减少无谓消耗。</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="learning-path" aria-labelledby="path-title">
+      <div class="section-heading"><span class="eyebrow">03 / LEARNING ROADMAP</span><h2 id="path-title">职业技能发展规划</h2><p>每个阶段，都用一个具体的实践目标检验理解。</p></div>
+      <ol class="learning-list">
+        <li class="card"><span class="step-number">01</span><div><h3>计算机与算法基础</h3><p>学习 Python、数据结构与算法、计算机网络、操作系统、数据库、机器学习、优化算法与 Git / Linux，建立扎实的计算机与算法工程基础。</p></div><p class="learning-output"><span>实践目标</span>完成小型算法实验，记录数据、参数与实验结果。</p></li>
+        <li class="card"><span class="step-number">02</span><div><h3>深入大语言模型</h3><p>学习 LLM 原理、Prompt Engineering、Embedding、RAG、知识切片与重排、模型评测与微调基础。</p></div><p class="learning-output"><span>实践目标</span>搭建一套可复用的检索与评测流程，量化回答质量。</p></li>
+        <li class="card"><span class="step-number">03</span><div><h3>Agent 工程与系统</h3><p>学习 Tool Calling、Agent Loop、Agent Harness、MCP、Context Management、分层记忆、向量数据库、FastAPI、Docker 与监控。</p></div><p class="learning-output"><span>实践目标</span>构建具有工具调用、记忆与运行监控能力的 Agent 系统。</p></li>
+        <li class="card"><span class="step-number">04</span><div><h3>探索职业方向</h3><p>结合项目复盘与岗位要求，重点考虑 AI Agent 工程师、大模型应用算法工程师、算法工程师与大语言模型算法工程师。</p></div><p class="learning-output"><span>实践目标</span>整理项目文档与技术复盘，持续补齐目标方向所需能力。</p></li>
+      </ol>
+      <!-- 课程要求：行内 CSS（5） -->
+      <p class="career-note" style="line-height: 1.9;"><strong style="font-weight: 650; color: #51418e;">我的方向：</strong>把优化算法的严谨与 Agent 工程的落地结合起来，做出稳定、可观测、能持续迭代的智能系统。</p>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 同行小队</p><nav aria-label="页脚导航"><a class="link" href="../../index.html">团队首页</a><a class="link" href="index.html">个人主页</a><a class="link" href="skills.html">职业技能</a></nav></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 同行小队 <span>· 学习与探索</span></p><nav aria-label="页脚导航"><a class="link" href="../../index.html">团队首页</a><a class="link" href="index.html">个人主页</a><a class="link" href="skills.html">职业技能</a></nav></div></footer>
 </body>
 </html>
