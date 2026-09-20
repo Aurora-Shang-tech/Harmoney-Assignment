@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="商徐炜的个人主页：人工智能学习、项目实践与职业技能发展规划。">
+  <title>商徐炜 · 个人主页</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 课程要求：ID 选择器 */
+    #bio-text { font-family: Arial, "Microsoft YaHei", sans-serif; }
+    /* 课程要求：标题选择器 */
+    h2 { color: #20243c; font-size: 1.65rem; letter-spacing: -0.04em; }
+    /* 课程要求：上下文选择器 */
+    div.content p { line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand link" href="index.html" aria-label="团队首页"><span class="brand-mark">同.</span><span>同行小队<span class="brand-caption">TEAM SPACE</span></span></a><nav aria-label="主导航"><a class="link " href="index.html" >团队首页</a><a class="link active" href="personal.html" aria-current="page">个人主页</a><a class="link " href="skills.html" >职业技能</a></nav></div></header>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="small-line"></span> HELLO, WORLD / 你好，世界</span>
+        <h1 id="hero-title">关于我<span class="title-dot">.</span><br><span class="hero-subtitle">在探索中，理解智能。</span></h1>
+        <p class="hero-description">关注人工智能、大语言模型与 AI Agent 技术，<br class="desktop-break">希望在学习和实践中不断深入大模型相关方向。</p>
+        <div class="tags hero-tags"><span>Artificial Intelligence</span><span>LLM</span><span>AI Agent</span></div>
+        <div class="hero-actions"><a class="link button primary" href="skills.html">探索我的学习路线 <span aria-hidden="true">↗</span></a><a class="link text-button" href="#about">更多关于我 <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <aside class="profile-card card" aria-label="个人信息">
+        <div class="profile-top"><span>PROFILE / 个人档案</span><span aria-hidden="true">✳</span></div>
+        <div class="avatar-wrap">
+          <span class="avatar-fallback" role="img" aria-label="个人照片待补充">商<span>照片待补充</span></span>
+          <!-- 补充本人照片后自动显示；缺少图片时保留姓名占位，不显示破图。 -->
+          <img class="avatar" src="images/profile.jpg" alt="商徐炜个人照片" onerror="this.hidden=true" onload="this.previousElementSibling.hidden=true">
+          <span class="avatar-badge" aria-hidden="true">&lt;/&gt;</span>
+        </div>
+        <h2>商徐炜</h2><p class="profile-major">人工智能方向 · 学习与实践</p>
+        <p class="student-id">学号 <code>SA26225270</code></p>
+        <div class="profile-education"><p><span>本科</span>浙江水利水电学院 · 人工智能</p><p><span>硕士</span>中国科学技术大学 · 软件工程</p></div>
+      </aside>
+    </section>
+
+    <section id="about" class="section about-grid" aria-labelledby="about-title">
+      <div class="section-heading"><span class="eyebrow">01 / ABOUT ME</span><h2 id="about-title">保持好奇，持续学习。</h2><p>从理解原理，到动手实现。</p></div>
+      <div class="content about-copy"><p id="bio-text">我是商徐炜，本科就读于浙江水利水电学院人工智能专业，硕士就读于中国科学技术大学软件工程专业。我对深度学习和大语言模型充满兴趣，目前主要学习 Transformer、LLM、RAG 与 Agent，也喜欢通过阅读技术博客梳理新的知识。</p><p>在 Python、PyTorch 和 NLP 项目实践中，我尝试把学到的原理变成可以运行的代码。未来，我希望继续深入大语言模型与智能体技术，在持续学习和实践中找到适合自己的方向。</p></div>
+    </section>
+
+    <section class="section" aria-labelledby="education-title">
+      <div class="section-heading row-heading"><div><span class="eyebrow">02 / EDUCATION</span><h2 id="education-title">教育经历</h2></div><span class="section-note">一步一步，拓宽知识的边界</span></div>
+      <div class="grid two-columns education-grid">
+        <article class="card education-card"><span class="icon-tile" aria-hidden="true">01</span><div><span class="overline">本科 / BACHELOR</span><h3>浙江水利水电学院</h3><p>人工智能</p></div></article>
+        <article class="card education-card"><span class="icon-tile cyan" aria-hidden="true">02</span><div><span class="overline">硕士 / MASTER</span><h3>中国科学技术大学</h3><p>软件工程</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="section-heading row-heading"><div><span class="eyebrow">03 / LEARNING BY BUILDING</span><h2 id="projects-title">在实践中，寻找答案。</h2></div><span class="section-note">项目与学习经历</span></div>
+      <div class="grid three-columns">
+        <article class="card project-card"><div class="project-top"><span class="icon-tile" aria-hidden="true">⎇</span><span class="overline">01 / KNOWLEDGE GRAPH</span></div><h3>浙江水利知识图谱<br>与问答系统</h3><p>基于深度学习完成实体识别与关系抽取，使用 Neo4j 构建知识图谱，实现知识图谱问答系统。</p><div class="tags"><span>NLP</span><span>Neo4j</span><span>深度学习</span></div></article>
+        <article class="card project-card"><div class="project-top"><span class="icon-tile cyan" aria-hidden="true">⌘</span><span class="overline">02 / LANGUAGE MODEL</span></div><h3>MiniLLM<br><span class="project-subtitle">从零理解语言模型</span></h3><p>学习并实现小型 Decoder-only Transformer，探索 Tokenizer、Attention、RoPE、GQA、KV Cache 与 SFT。</p><div class="tags"><span>PyTorch</span><span>Transformer</span></div></article>
+        <article class="card project-card"><div class="project-top"><span class="icon-tile blue" aria-hidden="true">&gt;_</span><span class="overline">03 / AI AGENT</span></div><h3>Coding Agent<br><span class="project-subtitle">让模型学会使用工具</span></h3><p>学习 Tool Calling、Agent Loop 和 Coding Agent，探索大语言模型智能体的工程实现。</p><div class="tags"><span>Tool Calling</span><span>Agent Loop</span></div></article>
+      </div>
+    </section>
+
+    <section class="section roadmap-section" aria-labelledby="roadmap-title">
+      <div class="section-heading row-heading"><div><span class="eyebrow">04 / WHAT'S NEXT</span><h2 id="roadmap-title">职业技能发展规划</h2><p>以基础为起点，逐步走向大模型与智能体应用。</p></div><a class="link text-button" href="skills.html">查看完整技能路线 <span aria-hidden="true">↗</span></a></div>
+      <div class="grid four-columns roadmap-grid">
+        <article class="roadmap-step"><span class="step-number">01</span><span class="overline">建立基础</span><h3>计算机与 AI 基础</h3><p>Python · 数据结构与算法 · Git · Linux · PyTorch · 机器学习 · 深度学习 · Transformer</p><p class="step-goal">建立扎实的人工智能与深度学习基础。</p></article>
+        <article class="roadmap-step"><span class="step-number">02</span><span class="overline">理解模型</span><h3>深入大语言模型</h3><p>LLM 原理 · Tokenizer · Attention · RoPE · GQA · KV Cache · Pretraining · SFT · PEFT / LoRA · RAG · Embedding</p><p class="step-goal">理解核心原理，逐步自己实现和训练小型语言模型。</p></article>
+        <article class="roadmap-step"><span class="step-number">03</span><span class="overline">走向应用</span><h3>大模型工程与 Agent</h3><p>LangChain · Tool Calling · Agent · MCP · Coding Agent · 向量数据库 · 模型部署 · 推理优化</p><p class="step-goal">逐步构建完整的大模型应用与 AI Agent。</p></article>
+        <article class="roadmap-step"><span class="step-number">04</span><span class="overline">未来方向</span><h3>探索职业方向</h3><p>大语言模型算法工程师<br>NLP 算法工程师<br>AI Agent 工程师<br>大模型应用算法工程师</p><p class="step-goal">结合学习与实践，明确适合自己的职业方向。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="interests-title">
+      <div class="section-heading"><span class="eyebrow">05 / BEYOND THE CODE</span><h2 id="interests-title">代码之外，也有热爱。</h2></div>
+      <div class="grid interests-grid">
+        <article class="card interest-card"><span aria-hidden="true">🎮</span><h3>游戏</h3><p>在游戏中放松，享受探索与挑战。</p></article>
+        <article class="card interest-card"><span aria-hidden="true">🎬</span><h3>电影</h3><p>走进不同的故事，感受光影的魅力。</p></article>
+        <article class="card interest-card"><span aria-hidden="true">◎</span><h3>旅行</h3><p>换个视角，看看世界。</p></article>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 同行小队 <span>· 学习与探索</span></p><nav aria-label="页脚导航"><a class="link" href="index.html">团队首页</a><a class="link" href="personal.html">个人主页</a><a class="link" href="skills.html">职业技能</a></nav></div></footer>
+</body>
+</html>
+
