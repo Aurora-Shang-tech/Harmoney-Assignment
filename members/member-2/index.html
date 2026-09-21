@@ -32,8 +32,8 @@
         <div class="profile-top"><span>PROFILE / 个人档案</span><span aria-hidden="true">✳</span></div>
         <div class="avatar-wrap">
           <span class="avatar-fallback" role="img" aria-label="个人照片待补充">杨<span>照片待补充</span></span>
-          <!-- 【需要你补充】放入本人照片后，把 href 改成本地文件名，例如 src="images/profile.jpg"（照片放在 members/member-2/images/ 下）；否则请保持 src="" 不显示图片 -->
-          <img class="avatar" src="" alt="杨金波个人照片" onerror="this.hidden=true" onload="this.previousElementSibling.hidden=true">
+          <!-- 本人照片，位于 members/member-2/images/profile.jpg；缺少图片时自动显示姓名占位。 -->
+          <img class="avatar" src="images/profile.jpg" alt="杨金波个人照片" onerror="this.hidden=true" onload="this.previousElementSibling.hidden=true">
           <span class="avatar-badge" aria-hidden="true">&lt;/&gt;</span>
         </div>
         <h2>杨金波</h2><p class="profile-major">大模型应用方向 · 学习与实践</p>
@@ -58,8 +58,8 @@
     <section class="section" aria-labelledby="projects-title">
       <div class="section-heading row-heading"><div><span class="eyebrow">03 / LEARNING BY BUILDING</span><h2 id="projects-title">在实践中，寻找答案。</h2></div><span class="section-note">项目与学习经历</span></div>
       <div class="grid three-columns">
-        <!-- 项目实践：PyTorch 图像分类 / jieba 中文分词 / 从零搭建小型神经网络。第一张卡里【】标注的两处请按实际填写。 -->
-        <article class="card project-card"><div class="project-top"><span class="icon-tile" aria-hidden="true">◉</span><span class="overline">01 / IMAGE CLASSIFICATION</span></div><h3>PyTorch 图像分类实验<br><span class="project-subtitle">第一次完整的模型训练</span></h3><p>使用 PyTorch 完成【数据集名称，如 CIFAR-10】图像分类，走通数据预处理、模型搭建、训练与测试评估的完整流程，并记录不同设置下准确率【准确率，如 85% → 92%】的变化。</p><div class="tags"><span>PyTorch</span><span>CNN</span><span>图像分类</span></div></article>
+        <!-- 项目实践：PyTorch 图像分类 / jieba 中文分词 / 从零搭建小型神经网络。 -->
+        <article class="card project-card"><div class="project-top"><span class="icon-tile" aria-hidden="true">◉</span><span class="overline">01 / IMAGE CLASSIFICATION</span></div><h3>PyTorch 图像分类实验<br><span class="project-subtitle">第一次完整的模型训练</span></h3><p>使用 PyTorch 完成图像分类，走通数据预处理、模型搭建、训练与测试评估的完整流程，并记录不同设置下准确率的变化。</p><div class="tags"><span>PyTorch</span><span>CNN</span><span>图像分类</span></div></article>
         <article class="card project-card"><div class="project-top"><span class="icon-tile cyan" aria-hidden="true">Aa</span><span class="overline">02 / CHINESE NLP</span></div><h3>中文分词与文本处理<br><span class="project-subtitle">让文本变成可分析的数据</span></h3><p>使用 jieba 对中文文本做分词与关键词提取，对比精确模式、全模式与搜索引擎模式的处理效果，并整理高频词为后续文本分析做准备。</p><div class="tags"><span>jieba</span><span>NLP</span><span>Python</span></div></article>
         <article class="card project-card"><div class="project-top"><span class="icon-tile blue" aria-hidden="true">&gt;_</span><span class="overline">03 / NEURAL NETWORK</span></div><h3>从零搭建小型神经网络<br><span class="project-subtitle">跟着教程理解前向与反向</span></h3><p>跟随教程从零构建小型神经网络，实现前向传播、损失计算与反向传播，理解梯度下降如何更新参数，为后续学习深度学习打基础。</p><div class="tags"><span>神经网络</span><span>反向传播</span><span>Python</span></div></article>
       </div>
